@@ -1,0 +1,30 @@
+@import url(c:\Users\Tabrez Dal\Desktop\vibrant-info-task\vibrant-json-crud\src\Styles\Button.css);
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .btn {
+  display: inline-block;
+  color: #fff;
+  background-color: black;
+  border: none;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: inherit;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+/*# sourceMappingURL=Header.css.map */

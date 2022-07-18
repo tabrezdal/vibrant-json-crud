@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACP,gBAAgB,ECIJ,OAAkB;EDH9B,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,SAAS;EACjB,QAAQ,EAAE,IAAI;EACd,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,mBAAmB;EAC3B,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "Container.scss",
+        "Style-Variables/variables.scss"
+    ],
+    "names": [],
+    "file": "Container.css"
+}

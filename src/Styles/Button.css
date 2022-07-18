@@ -1,0 +1,14 @@
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+/*# sourceMappingURL=Button.css.map */
