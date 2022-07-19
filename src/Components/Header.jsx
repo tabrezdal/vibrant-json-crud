@@ -1,30 +1,40 @@
-import React from 'react';
-import Button from './Button';
-// import '../Styles/Header.css';
+import React, { useState } from "react";
+import CutomButton from "./CutomButton";
+import { Navigate, useNavigate } from "react-router"; 
+import AddIcon from '@mui/icons-material/Add';
+import CloseIcon from "@mui/icons-material/Close";
 
+const Header = ({ title }) => {
 
-const Header = ({ title, onAdd, showAdd }) => {
+  const navigate = useNavigate();
 
-    const onClick = (e) =>{
-        console.log(e);
-      }
+  const [showAdd, setShowAdd] = useState(false);
+  // const [showAdd, setShowAdd] = useState(false);
+  
+  const onAdd = (e) => {
+    console.log(e);
+    navigate('/add') 
+  };
 
 
   return (
-    <header className='header'>
-    <h1>{title}</h1>
-    <Button BGcolor={showAdd ? 'white' : 'black'} color={showAdd ? 'red' : 'white'} text= {showAdd ? 'x' : '+'} onClick={onAdd}/>
-    </header> 
-
-
+    <header className="header">
+      <h1>{title}</h1>
+      <CutomButton
+        BGcolor={showAdd ? "white" : "black" }
+        color={showAdd ? "red" : "green"}
+        text={showAdd ? <CloseIcon /> : <AddIcon />}
+        onClick={onAdd}
+      />
+    </header>
   );
 };
 
 const HeaderStyle = {
-    color:'Grey',
-    backgroundColor: 'black'
-}
+  color: "Grey",
+  backgroundColor: "black",
+};
 Header.defaultProps = {
-    title : 'Some text',
-}
+  title: "Some text",
+};
 export default Header;
