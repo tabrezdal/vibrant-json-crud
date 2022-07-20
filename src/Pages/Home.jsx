@@ -20,6 +20,8 @@ function Home() {
     getPosts();
   }, []);
 
+
+  //fetch
   const fetchPosts = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await res.json();
@@ -27,20 +29,12 @@ function Home() {
     return data;
   };
 
-  // add Task
-  // const addPost = async (post) => {
-  //   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-type": "application/json",
-  //     },
-  //     body: JSON.stringify(post),
-  //   });
-
-  //   const data = await res.json();
-
-  //   setPosts([...posts, data]);
-  // };
+  //update
+  const updatePost = async (id) =>{
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    const data = await res.json() 
+    return data
+  }
 
   return (
     <div className="container">
